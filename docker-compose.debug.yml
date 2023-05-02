@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  angularproject:
+    image: angularproject
+    build:
+      context: .
+      dockerfile: ./Dockerfile

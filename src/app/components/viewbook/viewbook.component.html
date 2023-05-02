@@ -1,0 +1,38 @@
+<div class="body">
+  <div class="container">
+    <div class="row">
+        <div class="panel border-white">
+        <div class="panel-heading">
+          <h1 class="pt-3 font-weight-bold">ALL Book Details</h1>
+        </div>
+             <div class="panel-body p-3">
+             <form [formGroup]="creatbookForm"><div>
+        </div>
+        <div class="container">
+        <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+        <th>Book Name</th>
+        <th>Book Author</th>
+        <th>Book Price</th>
+        </tr>
+        </thead>
+        <tbody>
+      <tr *ngFor= "let book of Books">
+        <td>{{ book.bookName }}</td>
+        <td>{{ book.bookAuthor }}</td>
+        <td>{{ book.bookPrice }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+

@@ -1,0 +1,128 @@
+.outer{
+  height: 100vh;
+  background: linear-gradient(to top, #afc0ee 50%, #1b53ed 90%) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+nav {
+  position: relative;
+  justify-content: center;
+  //margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  background-color:#1b53ed;
+  }
+
+
+
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin: 0 10px;
+}
+
+a:active {
+  left: 2px;
+  top: 2px;
+}
+a{
+  color: #fff;
+ // background-color: blue;
+  font-family: Georgia, serif;
+
+ /* border:none;
+  color: inherit;
+  border:1px solid white;
+  border-bottom: 1px solid currentColor;
+  border-color: white;
+  color: blue;
+  text-decoration: none;
+  color: #000;
+  position: relative; */
+}
+
+a:nth-child(1):hover {
+  //background-color: #afc0ee;
+  text-decoration: underline;
+  text-decoration-thickness: 8px;
+
+}
+
+a:nth-child(2):hover {
+  text-decoration: underline;
+  text-decoration-thickness: 8px;
+}
+
+a:nth-child(3):hover {
+  text-decoration: underline;
+}
+
+a:nth-child(4):hover {
+  text-decoration: underline;
+}
+
+
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.text2 {
+  animation: slide-in 2s ease-in-out;
+  font-family: Georgia, serif;
+  font-size: 30px;
+}
+
+
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+ // transform: translateX(-50%) translateY(100%);
+  animation-name: slide-up;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-family: Georgia, serif;
+  //color:blue;
+}
+
+@keyframes slide-up {
+  from {
+
+    transform: translateX(-50%) translateY(0);
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(100%);
+    top: 400px;
+    opacity: 1;
+  }
+
+}

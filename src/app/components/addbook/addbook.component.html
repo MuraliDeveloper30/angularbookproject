@@ -1,0 +1,100 @@
+
+<div class="body">
+  <div class="container">
+    <div class="row">
+     <div >
+      <div class="panel border-white">
+        <div class="panel-heading">
+          <h3 class="pt-3 font-weight-bold">Create Book Deatils  - ADMIN Dashboard</h3>
+        </div>
+        <div class="panel-body p-3">
+          <form [formGroup]="addBookForm" >
+
+            <div class="form-group pt-3">
+              <div class="input-field">
+                  <div class="col-2">Book Name: </div>
+                  <div class="col-8">
+                    <input formControlName="bookName" type="text" id="bookName" placeholder="Enter your Book Name"> </div>
+                </div>
+              </div>
+
+            <div class="form-group pt-3">
+              <div class="input-field">
+                  <div class="col-2">Book Author: </div>
+                  <div> <input formControlName="bookAuthor" type="text" id="bookAuthor" placeholder="Enter your Book Author"></div>
+              </div>
+              </div>
+
+              <div class="form-group pt-3">
+                <div class="input-field">
+                    <div class="col-2">Book Price: </div>
+                    <div> <input formControlName="bookPrice" type="text" id="bookPrice" placeholder="Enter your Book Price"></div>
+                </div>
+                </div>
+
+            <div class="form-group pt-3">
+              <div class="input-field">
+                <div class="col-2">Book image: </div>
+                <div>
+                  <form action="/action_page.php">
+                    <input type="file" id="bookImage" name="filename">
+                  </form>
+                 <!--  <span class="upload" *ngIf="progress > 0">
+                    {{progress}}%
+                  </span>
+                  <span class="upload" *ngIf="message">
+                    {{message}}
+                  </span> -->
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mt-4 w-100" (click)="createButton()">Create Book Details</button>
+
+            <!--
+            <small *ngIf="signUpForm.controls['firstName'].dirty && signUpForm.hasError('required','firstName')" class="text-danger">"*FirstName is required</small>
+            <div class="form-group pt-3">
+              <div class="input-field" [class.error]="signUpForm.controls['lastName'].dirty && signUpForm.hasError('required','lastName')">
+                <span class="fa fa-user p-2"></span>
+                <input formControlName="lastName" type="text" placeholder="LastName">
+              </div>
+            </div>
+            <small *ngIf="signUpForm.controls['lastName'].dirty && signUpForm.hasError('required','lastName')" class="text-danger">"*LastName is required</small>
+            <div class="form-group pt-3">
+              <div class="input-field" [class.error]="signUpForm.controls['email'].dirty && signUpForm.hasError('required','email')">
+                <span class="fa fa-user p-2"></span>
+                <input formControlName="email" type="text" placeholder="Email">
+              </div>
+            </div>
+            <small *ngIf="signUpForm.controls['email'].dirty && signUpForm.hasError('required','email')" class="text-danger">"*Email is required</small>
+            <div class="form-group pt-3">
+              <div class="input-field" [class.error]="signUpForm.controls['userName'].dirty && signUpForm.hasError('required','userName')">
+                <span class="fa fa-user p-2"></span>
+                <input formControlName="userName" type="text" placeholder="Username">
+              </div>
+            </div>
+            <small *ngIf="signUpForm.controls['userName'].dirty && signUpForm.hasError('required','userName')" class="text-danger"class="text-danger">"*UserName is required</small>
+
+            <div class="form-group pt-3">
+              <div class="input-field" [class.error]="signUpForm.controls['password'].dirty && signUpForm.hasError('required','password')">
+                <span class="fa fa-lock p-2"></span>
+                <input formControlName="password" [type]="type" placeholder="Password">
+                <span (click)="hideshow()" class="fa {{eyeIcon}}" ></span>
+              </div>
+            </div>
+            <small *ngIf="signUpForm.controls['password'].dirty && signUpForm.hasError('required','password')" class="text-danger"class="text-danger" class="text-danger">"*Password is required</small>
+            <button type="submit" class="btn btn-primary btn-block mt-4 w-100" (click)="onSignUp()">Sign UP</button>
+            <div class="text-center pt-4 text-muted">Already have account? <a id="forget" routerLink="/login">Login</a></div> -->
+          </form>
+        </div>
+
+
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+
+
+
